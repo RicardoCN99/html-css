@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias HTML</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir este site em varios dispositivos ou aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>  
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <hr><hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    
+    <picture>
+        <source media="(min-width: 1050px )" srcset="imagens/foto-g.png" type="image/png">
+        <source media="(min-width: 750px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-p.png" alt="foto flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+
+    <p>Agora vamos reproduzir um audio</p>
+    <audio src="midia/audio_natalino.mp3" controls > </audio>
+
+<h2>Ganhando mais compatibilidade/outra forma de carregar audio</h2>
+
+    <audio controls preload="metadata">
+        <source src="midia/audio_natalino.wav" type="audio/wav">
+        <source src="midia/audio_cursoemvideo.mp3" type="audio/mpeg">
+        <source src="midia/audio_cursoemvideo.ogg" type="audio/ogg">
+        
+     </audio>
+     
+      <p>Se nao abrir nenhum ficheiro de som navegador nao é compativel com nenhum formato</p>
+
+</body>
+</html>

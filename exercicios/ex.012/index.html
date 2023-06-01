@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>
+        Inserindo videos hospedados localmente
+    </h1>
+    <p>este video esta no meu servidor</p>
+    <video controls width="400" src="videos/video_flor.mp4.mp4"></video>
+    <br>
+
+    <!--Ou entao apresenta se assim, para ter certeza que abrira em qualquer navegador-->
+
+    <video controls width="500" poster="videos/foto-p.png" loop autoplay>
+        <source src="videos/video_flor.m4v" type="video/m4v">
+        <source src="videos/video_flor.mp4.mp4" type="video/mp4">
+        <source src="videos/video_flor.ogv" type="video/ogv">
+        <source src="videos/video_flor.webm.webm" type="video/webm">
+    </video>
+
+    <p>Foto de capa nada a ver</p>
+
+    <h1>incorporando videos de hospedagem externa</h1>
+    <h2>Videos do youtube</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OoJBMjjIXY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    
+</body>
+</html>
