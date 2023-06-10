@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens de fundo</title>
+    <style>
+
+        body{
+            background-image: linear-gradient(to bottom, rgb(236, 236, 151), rgb(221, 145, 145));
+            height: 100%;
+            margin: 0;
+            background-attachment: fixed;
+        }
+        div.quadrado{
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: rgb(216, 214, 214);
+        }
+
+        div#m1{
+            background-color: rgb(164, 78, 245);
+        }
+
+        div#m2{
+            background-image: linear-gradient(to bottom, rgb(255, 255, 125), rgb(236, 147, 44));
+        }
+
+        div#m3{
+            background-image: url(imagens/pattern003.png);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="m1">
+
+    </div>
+    
+    <div class="quadrado" id="m2">
+
+    </div>
+
+    <div class="quadrado" id="m3">
+
+    </div>
+
+</body>
+</html>
