@@ -21,6 +21,7 @@ h1{
     font-size: 100px;
     max-width: 601px;
     margin: auto;
+    text-align: center;
 }
 
 header > h1::first-letter{
@@ -32,6 +33,7 @@ p#header{
     font-size: 20px;
     margin: auto;
     width: fit-content;
+    text-align: center;
 }
 
 a.autor:link{
