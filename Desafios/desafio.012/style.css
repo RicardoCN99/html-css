@@ -13,8 +13,6 @@ header{
     color: white;
     padding: 100px 0px 100px 0px;
     font-family: 'Passion One', cursive;
-    
-    
 }
 
 h1{
@@ -26,6 +24,7 @@ h1{
 
 header > h1::first-letter{
     font-size: 140px;
+   
 }
 
 p#header{
