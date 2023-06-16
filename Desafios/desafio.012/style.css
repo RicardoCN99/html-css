@@ -35,10 +35,8 @@ p#header{
     text-align: center;
 }
 
-a.autor:link{
-    background-color: white;
-    -webkit-background-clip: text;
-    color: transparent;
+a.autor{
+    color: white;
     text-decoration: none;
 }
 
@@ -108,4 +106,15 @@ footer > p{
     color: white;
     margin: auto;
     width: fit-content;
+}
+
+a.linkjulinho{
+        
+        color: rgb(97, 175, 226);
+        text-decoration: none;
+}
+
+a.linkjulinho:hover{
+    text-decoration: underline;
+    color: rgb(238, 169, 41);
 }
