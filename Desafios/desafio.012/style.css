@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 *{
     margin: 0px;
@@ -11,13 +12,19 @@ header{
     background-color: black;
     color: white;
     padding: 100px 0px 100px 0px;
+    font-family: 'Passion One', cursive;
+    
     
 }
 
 h1{
     font-size: 100px;
+    max-width: 601px;
     margin: auto;
-    width: fit-content;
+}
+
+header > h1::first-letter{
+    font-size: 140px;
 }
 
 p#header{
@@ -40,7 +47,7 @@ a.autor:hover{
 }
 
 main{
-    font-family: 'Passion One', cursi
+    font-family: 'Sriracha', cursive;
 }
 
 div.verso1{
