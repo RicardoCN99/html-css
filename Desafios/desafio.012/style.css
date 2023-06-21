@@ -17,15 +17,11 @@ header{
 
 h1{
     font-size: 100px;
-    max-width: 601px;
     margin: auto;
     text-align: center;
+    
 }
 
-header > h1::first-letter{
-    font-size: 140px;
-   
-}
 
 p#header{
     color: white;
@@ -49,23 +45,28 @@ main{
     font-family: 'Sriracha', cursive;
 }
 
-div.verso1{
+div.normal{
     line-height: 70px;
-    padding:100px 0px 100px 30px ;
+    padding:10vh 0px 10vh 30px ;
     font-size: 40px;
 }
 
-div.espaçamento{
-    height: 40px;
-}
-
 div.verso2{
-    line-height: 70px;
-    padding:100px 0px 100px 0px ;
+    line-height: 2em;
+    padding:10vh 0px 10vh 0px ;
     font-size: 40px;
     background: black url(imagens/background001.jpg) no-repeat fixed;
     background-size: cover;
     color: white;
+    
+}
+
+div.verso5{
+    background: black url(imagens/background002.jpg) no-repeat fixed;
+    background-size: cover;
+    line-height: 2em;
+    padding:10vh 0px 10vh 0px ;
+    font-size: 40px;
     
 }
 
@@ -75,26 +76,6 @@ div.caixapequena{
     padding: 25px;
 }
 
-div.verso3e4{
-    line-height: 70px;
-    padding:100px 0px 100px 30px ;
-    font-size: 40px;
-}
-
-div.verso5{
-    background: black url(imagens/background002.jpg) no-repeat fixed;
-    background-size: cover;
-    line-height: 70px;
-    padding:100px 0px 100px 0px ;
-    font-size: 40px;
-    
-}
-
-div.verso6e7{
-    line-height: 70px;
-    padding:100px 0px 100px 30px ;
-    font-size: 40px;
-}
 
 footer{
     background-color: black;
