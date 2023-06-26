@@ -56,15 +56,18 @@ div.verso2{
     padding:10vh 0px 10vh 0px ;
     background: black url(imagens/background001.jpg) no-repeat fixed;
     background-size: cover;
+    background-position: bottom right;
     color: white;
+    box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.397);
     
 }
 
 div.verso5{
-    background: black url(imagens/background002.jpg) no-repeat fixed;
+    background: rgb(0, 0, 0) url(imagens/background002.jpg) no-repeat fixed;
     background-size: cover;
     line-height: 2em;
     padding:10vh 0px 10vh 0px ;
+     box-shadow: inset 0px 10px 10px 0px rgba(0, 0, 0, 0.397);
     
 }
 
