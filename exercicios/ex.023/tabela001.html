@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela simples</title>
+    <STYLE>
+        TD{
+            border: 2PX SOLID black;
+            padding: 5PX 0PX 5PX 10PX;
+            width: 300PX;
+            height: 40PX;
+            text-align: center; 
+          }  
+
+        TABLE{
+            border-collapse: collapse;
+        }
+
+        tr.derivados{
+            background-color: rgba(128, 128, 128, 0.438);
+        }
+    </STYLE>
+</head>
+<body>
+
+        <!-- HIERARQUIA DA TABELA
+                
+            TABLE-> TABELA
+                TABLE ROW-> LINHA DE TABELA
+                    TABLE HEADER-> CABEÇALHO DA TABELA
+                    TABLE DATA-> DADOS DA TABELA
+                -->
+        
+    <H1>EXEMPLO DE TABELA SIMPLES</H1>
+
+    <BR></BR>
+
+    <table>
+        <tr>
+            <td>A1</td>
+            <TD>B1</TD>
+            <TD>C1</TD>
+        </tr>
+
+        <TR class="derivados">
+            <TD>A2</TD>
+            <TD>B2</TD>
+            <TD>C2</TD>
+        </TR>
+
+        <TR>
+            <TD>A3</TD>
+            <TD>B3</TD>
+            <TD>C3</TD>
+        </TR>
+    </table>
+
+</body>
+</html>
