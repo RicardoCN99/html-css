@@ -9,8 +9,11 @@
             border: 2PX SOLID black;
             padding: 5PX 0PX 5PX 10PX;
             width: 300PX;
-            height: 40PX;
+            height: 100px;
             text-align: center; 
+            vertical-align: top;
+            
+
           }  
 
         TABLE{
@@ -19,6 +22,12 @@
 
         tr.derivados{
             background-color: rgba(128, 128, 128, 0.438);
+        }
+
+        td.top{
+            vertical-align: bottom; /* bottom
+                                        middle
+                                        bottom*/ 
         }
     </STYLE>
 </head>
@@ -44,9 +53,9 @@
         </tr>
 
         <TR class="derivados">
-            <TD>A2</TD>
-            <TD>B2</TD>
-            <TD>C2</TD>
+            <TD class="top">A2</TD>
+            <TD class="top">B2</TD>
+            <TD class="top">C2</TD>
         </TR>
 
         <TR>
@@ -54,7 +63,15 @@
             <TD>B3</TD>
             <TD>C3</TD>
         </TR>
+
+        <tr class="derivados">
+            <td class="top">A4</td>
+            <td class="top">B4</td>
+            <td class="top">C4</td>
+        </tr>
     </table>
+
+
 
 </body>
 </html>
