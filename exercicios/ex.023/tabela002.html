@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+    body{
+            background: black url(https://p1.pxfuel.com/preview/942/790/551/flag-american-flag-red-white-and-blue-sky-blue.jpg) no-repeat fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        table{
+            position:relative;
+        }
 
         *{
             font-family: Arial, Helvetica, sans-serif;
@@ -13,14 +22,19 @@
 
         thead, tfoot{
             background-color: rgb(180, 180, 180);
-            
-            
         }
 
         tbody{
             background-color: rgb(222, 222, 226);
-       
-     }
+        }
+
+        /* colocar cabeçalho fixo em toda a rolagem da tabela,
+        útil para tabelas com muitas linhas e colunas*/
+     thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: rgb(180, 180, 180);
+        }
 
         th, td{
             width: 200px;
