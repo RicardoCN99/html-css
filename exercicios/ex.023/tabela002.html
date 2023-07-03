@@ -12,25 +12,44 @@
         }
 
         thead, tfoot{
-            background-color: rgb(202, 202, 202);
+            background-color: rgb(180, 180, 180);
+            
             
         }
 
         tbody{
-            background-color: rgb(208, 208, 255);
+            background-color: rgb(222, 222, 226);
        
      }
 
         th, td{
-            width: 150px;
+            width: 200px;
             text-align: center;
-            height: 50px;
+            height: 70px;
             border: 2px solid black;
        }
- 
-        .redflag{
-            background-image: linear-gradient(to bottom, red, rgb(255, 2, 2));
+
+        caption{
+            background-color: rgb(205, 205, 206);
+            padding: 5px;
+            font-size: 1.5em;
+            font-weight: bold;
         }
+
+
+        /* efeito zebrado*/
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
+        }
+
+        
+        /* efeito zebrado*/
+        tbody > tr:nth-child(2n-1){
+            background-color: white
+            ;
+        }
+
+
 
     </style>
 </head>
@@ -38,6 +57,8 @@
         <h1>Uso de tabelas grandes</h1>
             
     <!--ANATOMIA DE TABELAS
+
+        CAPTION->LEGENDA/COMENTÁRIO
         THEAD
         (TR,TD,TH)
             TBODY
@@ -49,10 +70,10 @@
         <table>
             <thead>
                 <tr>
-                    <th>Posião</th>
-                    <th>Estado</th>
-                    <th>População</th>
-                    <th>Populaçao aproximaamente igual</th>
+                    <th scope="col">Posião</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">População</th>
+                    <th scope="col">Populaçao aproximaamente igual</th>
                 </tr>
             </thead>
 
@@ -68,14 +89,14 @@
                     <td>2</td>
                     <td>Texas</td>
                     <td>29145505</td>
-                    <td class="redflag">Venezuela</td>
+                    <td>Venezuela</td>
                 </tr>
 
                 <tr>
                     <td>3</td>
                     <td>Florida</td>
                     <td>21538187</td>
-                    <td class="redflag">Burquina Fasso</td>
+                    <td >Burquina Fasso</td>
                 </tr>
 
                 <tr>
@@ -88,12 +109,16 @@
 
             <tfoot>
                 <tr class="tfoot">
-                    <th>total habitantes</th>
+                    <th scope="row">total habitantes</th>
                     <td>----</td>
                     <td><strong>130939588</strong></td>
                     <td>----</td>
                 </tr>
-            </tfoot>
+            </tfoot> 
+             <caption>
+            População por estado dos EUA
+             </caption>
         </table>
+      
 </body>
 </html>
