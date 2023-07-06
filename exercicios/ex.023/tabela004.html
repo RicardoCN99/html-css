@@ -12,13 +12,13 @@
 
         table{
             border-collapse: collapse;
-            margin: 40px ;
+            margin: auto ;
         }
 
         th,td{
            padding: 10px;
            border: 1px solid black;
-           width: 180px;
+           max-width: 180px;
            text-align: center;
         }
 
@@ -38,70 +38,69 @@
             background-color: rgb(233, 250, 255);
         }
 
+        div{
+            margin: auto;
+            max-width: 800px ;
+        }
+
     </style>
 </head>
 <body>
 
     
 
-    <table>
+    <div>
+        <table>
         
-        <caption>Filmes por sexo</caption>
-
-        <thead>
-            <tr>
-                <th scope="col">GRUPO</th>
-                <th scope="col">NOMES</th>
-                <th colspan="3" scope="colgroup" >FILMES</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <th rowspan="3" scope="rowgroup">MULHERES </td>
-                <td>Ana Maria</td>
-                <td>Hulk</td>
-                <td>Inception</td>
-                <td>Batman</td>
-
-            <tr>
-                <td>Beatriz Sousa</td>
-                <td>Alien</td>
-                <td>Rambo</td>
-                <td>Vingadores</td>
-            </tr>
-
-            <tr>
-                <td>Cláudia Melo</td>
-                <td>Oblivian</td>
-                <td>Matrix</td>
-                <td>Big Hero</td>
-            </tr>
-
-            <tr>
-                <th rowspan="3" style="background-color: white;" scope="rowgroup">HOMENS</td>
-                <td>Bruno Mendonça</td>
-                <td>Intocaveis</td>
-                <td>Amnesia</td>
-                <td>Gladiador</td>
-            </tr>
-
-            <tr>
-                <td>Daniel Lourenço</td>
-                <td>Wall-E</td>
-                <td>Oldboy</td>
-                <td>Dangal</td>
-            </tr>
-
-            <tr>
-                <td>Fábio Mota</td>
-                <td>Star Wars</td>
-                <td>Taxi Driver</td>
-                <td>Toy story</td>
-            </tr>
-        </tbody>
-
-    </table>
+            <caption>Filmes por sexo</caption>
+            <thead>
+                <tr>
+                    <th scope="col">GRUPO</th>
+                    <th scope="col">NOMES</th>
+                    <th colspan="3" scope="colgroup" >FILMES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">MULHERES </td>
+                    <td>Ana Maria</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                <tr>
+                    <td>Beatriz Sousa</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td>Cláudia Melo</td>
+                    <td>Oblivian</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" style="background-color: white;" scope="rowgroup">HOMENS</td>
+                    <td>Bruno Mendonça</td>
+                    <td>Intocaveis</td>
+                    <td>Amnesia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr>
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr>
+                    <td>Fábio Mota</td>
+                    <td>Star Wars</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy story</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
