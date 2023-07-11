@@ -16,7 +16,7 @@ th{
 }
 
 td{
-    width: 180px;
+    width: 90px;
     height: 40px;
     border: 1px solid black;
     text-align: center;
@@ -30,4 +30,8 @@ td{
 
 .disciplina{
     text-align: left;
+}
+
+.widthp{
+    width: 90px;
 }
