@@ -23,7 +23,7 @@ td{
     text-align: center;
 }
 
-.area,th{
+.mediad,th{
     color: white;
     text-align: center;
     background-color: rgb(133, 131, 131);
@@ -36,3 +36,4 @@ td{
 .widthp{
     width: 90px;
 }
+
