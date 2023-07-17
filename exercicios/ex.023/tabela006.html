@@ -21,16 +21,24 @@
         div#responsividade{
             overflow-x: auto;
         }
+
+        tr:nth-child(even){
+            background-color: rgb(230, 230, 230);
+        }
     </style>
 </head>
 <body>
+
+
+            <h1 style="text-align: center;">TABELA RESPONSIVA</h1>
+
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam eum nobis ab porro quibusdam pariatur eveniet quod voluptate officia. Optio earum quia quo dolorem doloribus repellendus architecto veritatis ratione mollitia?</p>
 
        <div id="responsividade">
            <table>
             <thead>
                 <CAPTIOn>LUCRO LIQUIDO(em bil)</CAPTIOn>
-                <TR>
+                <TR style="background-color: rgb(197, 172, 172);">
                     <th>EMPRESAS</th>
                     <th>JAN</th>
                     <th>FEV</th>
@@ -63,19 +71,8 @@
                     <td>15</td>
                 </TR>
                 <TR>
-                    <TH>NETFLIX</TH>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
-                    <TD>12</TD>
+                    <TH scope="row">NETFLIX</TH>
+                    <TD colspan="12">12</TD>
                 </TR>
                 <tr>
                     <th>AMAZON</th>
