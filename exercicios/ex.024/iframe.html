@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando o iframe</title>
+
+    <style> /* Prevalece o style em relaçao ás configuraçoes na propria tag*/
+        .iframe1{
+            width: 700px;
+            height: 700px;
+            border: 3px dashed black;
+        }
+    </style>
 </head>
 <body>
 
@@ -11,11 +19,16 @@
 
     <p>exemplo de iframe do site 
         
-        <iframe src="http://www.cursoemvideo.com" frameborder=""></iframe>
+            <!--TAMANHO PADRÃO 300X150 -->
+        <iframe class="iframe1" src="http://www.cursoemvideo.com" frameborder="0"  height="300px" width="500px">
+            <a href="http://www.cursoemvideo.com"> curso em video</a>
+        </iframe>
         
         ...texto nada ver</p>
 
-        <p> iframe com o site do google <iframe src="http://www.google.com" frameborder="0"></iframe>.</p>  <!-- GOOGLE NAO ESTABELECE LIGAÇAO DEVIDO A PROBLEMAS DE SEGURANÇA COM O IFRAME-->
+        <p> iframe com o site do google <iframe src="http://www.google.com" frameborder="0" width="700px" height="400px"> link caso nao haja compatibilidade<a href="http://www.google.com" target="_blank"> GOOGLE </a></iframe>.</p> 
+         <!-- GOOGLE NAO ESTABELECE LIGAÇAO DEVIDO A PROBLEMAS DE SEGURANÇA COM O IFRAME-->
 
+        
 </body>
 </html>
