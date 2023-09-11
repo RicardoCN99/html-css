@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais comandos de formularios</title>
+</head>
+<body>
+    
+    <h1>Checkbox e Radio</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Nome e Sexo</legend>
+            
+            <p><label for="name">Nome:</label>
+                <input type="text" name="name" id="name" placeholder="first and last" required></p>
+
+                <input type="radio" name="sexo" id="fem" value="F"> <label for="fem">Feminino </label>
+                    <br>                    <!--value serve para ao enviar aparecer M ou F e nao on, como aparece no checkbox-->
+                <input type="radio" name="sexo" id="mas" value="M"> <label for="mas">Masculino</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Desportos Favoritos</legend>
+            <input type="checkbox" name="fut" id="fut"><label for="fut"> Futebol</label><br>
+            <input type="checkbox" name="bas" id="bas"><label for="bas"> Basquete</label><br>
+            <input type="checkbox" name="raq" id="raq"><label for="raq"> Raquetes</label><br>
+            <input type="checkbox" name="ber" id="ber"><label for="ber"> Berlinde</label><br>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+
+    </form>
+
+</body>
+</html>
