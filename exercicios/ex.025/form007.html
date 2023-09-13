@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+
+        <h1>Exemplo de Formulario</h1>
+    
+    <form action="cadastro.php" method="post">
+
+        <p><label for="iest">Conselho: </label>
+            <select name="est" id="iest">
+                               <!--"selected" coloca opção como principal-->
+                <option value="" selected>---ESCOLHA---</option>
+
+                <optgroup label="Zona Norte">
+                    <option value="p">Porto</option>
+                    <option value="BG">Braga</option>
+                    <option value="VR">Vila Real</option>
+                </optgroup>
+
+                    <!--Aqui label serve para colocar um "titulo"-->
+                <optgroup label="Zona Sul"> 
+                    <option value="LB">Lisboa</option>
+                    <option value="AT">Alentejo</option>
+                    <option value="AG">Algarve</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profisâo: </label>
+            <input type="text" name="prof" id="iprof" list="listap"> <!--"list" serve para identificar o datalist que corresponde-->
+            <datalist id="listap">
+                <option value="DEV">Desenvolvedor</option>
+                <option value="CZN">Cozinheiro</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"> </textarea>
+        </p>
+
+        <input type="submit" value="enviar">
+        <input type="reset" value="Apagar">
+    </form>
+
+</body>
+</html>
