@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+
+        <h1>Exemplo de Output</h1>
+
+        <p><label for="nasc">Qual é a sua data de nascimento? : </label>
+        <input type="number" name="nasc" id="idade" min="1920" max="2023" placeholder="ano" size="60" oninput="calcidade()"></p>
+
+        <output id="idad">0</output>
+    
+        <script>
+            function calcidade() {
+                
+            let atual= new Date() .getUTCFullYear ()
+            idad.innerHTML = Number(atual) - Number(idade.value)
+                }
+        </script>        <!--variavel "atual" fica com o ano atual-->
+</body>
+</html>
