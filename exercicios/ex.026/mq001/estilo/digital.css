@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+
+/*css do ecrã*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 25px
+}
+
+h1{
+    font-size: 2em;
+    line-height: 50px;
+}
+
+menu{
+    height: 40px;
+    background-color: rgb(233, 215, 245);
+    padding-top: 10px;
+    
+}
+
+
+li{
+    display: inline-block;
+    width: 100px;
+}
+
+main{
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(248, 237, 237);
+    border-radius: 5px;
+    padding: 5px;
+}
+

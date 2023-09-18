@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+
+
+/*css do ecrã*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 25px;
+    text-indent: 10px;
+    
+}
+
+h1{
+    font-size: 2em;
+    line-height: 50px;
+}
+
+menu{
+    display: none;
+    }
+
+
+li{
+    display: inline-block;
+    width: 100px;
+}
+
+main{
+
+    display: block;
+    margin: auto;
+}
+
+article::after{
+    content: "Este site foi criado por Ricardo Nunes 18/09/23";
+}
