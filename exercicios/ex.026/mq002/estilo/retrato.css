@@ -1,3 +1,9 @@
 @charset "UTF-8";
 
 /* dispositivo em pé*/
+
+body{
+    background: url(../imagens/cev-portrait.jpg) no-repeat fixed ;
+    background-position: bottom;
+    background-size: contain;
+}
