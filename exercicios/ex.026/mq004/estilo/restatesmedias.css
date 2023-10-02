@@ -1,3 +1,78 @@
 @charset "UTF-8";
 
 /* CSS para tods as restantes medias*/
+/* TYICAL DEVICE BREAKPOINTS-------
+-------------------------------------------------------/
+PEQUENAS TELAS: ATÉ 576px (definido como padrao)        /
+TELEMOVEL: 576 A 767px (definido como padrao)           /
+TABLET: 768px A 991px                                  /
+PC: 992px a 1119px                                     /
+GRANDES TELAS: ACIMA DE 1200                           /
+-------------------------------------------------------/
+*/
+
+@media print{ /*Não imprime com a imagem de background*/
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    h1{
+        color: black;
+    }
+
+    main::after{
+        content: "ESTE FOI UM SITE DESENVOLVIDO POR: RICARDO NUNES";
+        border: 0.5px solid black;
+    }
+
+    body{
+        border: 2px solid black;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*TABLET*/
+
+    html{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+img#tablet{display: block;}
+img#phone{display: none;}
+img#print{display: none;}
+img#tv{display: none;}
+img#pc{display: none;}
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*PC/DESKTOP*/
+
+   html{
+        background-image: url(../imagens/back-pc.jpg);
+   }
+
+img#tablet{display: none;}
+img#phone{display: none;}
+img#print{display: none;}
+img#tv{display: none;}
+img#pc{display: block;}
+    
+}
+
+@media screen and (min-width:1200px){/*TELAS GRANDES*/
+
+  html{
+    background-image: url(../imagens/back-tv.jpg);
+  }
+
+img#tablet{display: none;}
+img#phone{display: none;}
+img#print{display: none;}
+img#tv{display: block;}
+img#pc{display: none;}
+
+
+}
+
+
