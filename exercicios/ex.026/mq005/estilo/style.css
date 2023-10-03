@@ -88,7 +88,9 @@ article > h2{
         font-size: 16px;
     }
     
-    men
+    menu{
+        display: block;
+    }
 
     a{
         text-decoration: none;
