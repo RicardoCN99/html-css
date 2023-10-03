@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+@media all{
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(209, 209, 209);
+}
+
+header{
+    background-color: rgb(148, 148, 148);
+}
+
+header > h1{
+    text-align: center;
+    padding: 10px 0px 20px 0px;
+}
+
+
+li{
+    display: inline-block;
+    padding: 8px ;
+    margin-right: 2px;
+    background-color:rgb(92, 92, 92) ;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li:hover{
+    background-color: rgba(128, 128, 128, 0.438);
+}
+
+main{
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10px;
+    background-color: white ;
+    border-radius: 7px;
+    padding: 5px;
+    text-indent: 10px;
+}
+
+}
