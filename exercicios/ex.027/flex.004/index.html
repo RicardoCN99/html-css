@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .pai{
+            background-color: rgb(186, 140, 230);
+            display: flex;
+            text-align: center;
+            flex-flow: row wrap;
+            justify-content:space-around;/*para main-axis*/
+            height: 60px;
+            align-items: center;/*para cross-axis*/
+        }
+
+        .item{
+            background-color: rgb(185, 221, 130);
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="item">Exemplo de flex A</div>
+        <div class="item">Exemplo de flex B</div>
+        <div class="item">Exemplo de flex C</div>
+        <div class="item">Exemplo de flex D</div>
+        <div class="item">Exemplo de flex E</div>
+        <div class="item">Exemplo de flex F</div>
+    </div>
+</body>
+</html>
