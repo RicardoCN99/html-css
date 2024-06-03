@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        .pai{
+            background-color: rgb(186, 140, 230);
+            display: flex;
+            text-align: center;
+            flex-flow: row nowrap;
+        }
+
+        .item{
+            background-color: rgb(185, 221, 130);
+            border: 1px solid black;
+            flex-basis: 170px;
+
+        }
+
+        #grsh1{
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        #grsh2{
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+
+        #grsh3{
+            flex-grow: 3;
+            flex-shrink: 2;
+        }
+
+        #grsh4{
+            flex-grow: 2;
+            flex-shrink: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="item" id="grsh1">A</div>
+        <div class="item" id="grsh2">B</div>
+        <div class="item" id="grsh3">C</div>
+        <div class="item">D</div>
+        <div class="item" id="grsh4">E</div>
+        <div class="item">F</div>
+    </div>
+</body>
+</html>

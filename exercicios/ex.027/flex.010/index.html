@@ -8,26 +8,25 @@
         .pai{
             background-color: rgb(186, 140, 230);
             display: flex;
-            flex-flow: row wrap         
-            
+            text-align: center;
         }
 
         .item{
             background-color: rgb(185, 221, 130);
             border: 1px solid black;
-            text-align: center;
-            flex-basis: 90px;
-            align-self: center;
+            flex-grow: 0 ; /* 0 ou 1 para aumentar ou prender width(main-axis) do item*/
+            flex-shrink: 1;  /* 0 ou 1 para diminuir ou prender width(main-axis) do item*/
+            flex-basis: 100px;
         }
     </style>
 </head>
 <body>
     <div class="pai">
-        <div class="item">conteudo quebra por nao caber emm 100px </div>
-        <div class="item">B height do item alarga para o maximo levando o container pai com ele</div>
-        <div class="item">C</div>
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item" style="flex-grow: 1;">C</div>
         <div class="item">D</div>
-        <div class="item">E fcewf efwf wefwef wefe wfe  </div>
+        <div class="item">E</div>
         <div class="item">F</div>
     </div>
 </body>
