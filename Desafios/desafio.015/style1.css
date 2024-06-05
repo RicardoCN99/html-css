@@ -19,29 +19,53 @@ header{
 
 h1{
     margin: 0px;
-    flex: 1 0 auto;
+    flex: 1 0 150px;
     color: white;
+
 }
 
-#opçao{
+.opçao{
     display: inline-block;
     background-color: black;
     color: white;
-    padding:10px 0px;
-    flex: 0 0 120px;
-    margin-right: 10px;
-    height: 20px;
+    padding:10px ;
     text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-.item{
-    border-radius: 5px;
-    }
+.opçao:hover{
+    
+}
 
-    main{
-        margin: 5px;
-        border-radius: 7px;
-        padding: 5px;
-        background-color:white ;
-        box-shadow: 5px 5px 16px  black;
+
+ main{
+    margin: 5px;
+    border-radius: 7px;
+    padding: 5px;
+    background-color:white ;
+    box-shadow: 5px 5px 16px  rgba(0, 0, 0, 0.295);
+}
+
+#pai{
+    display: flex;
+    justify-content:space-evenly;
+    width: 500px;
+}
+
+    /* Media querie para telemovel*/
+
+    @media screen and (min-width:0px ) and (max-width:560px){
+         
+        #pai,header{
+            flex-flow: column nowrap;
+            justify-content: space-evenly;
+            width: auto;
+            height: 300px;
+        }
+        
+        h1{
+            flex:0 0 auto;
+            text-align: center;
+        }
     }
