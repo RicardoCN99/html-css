@@ -15,11 +15,11 @@ header{
     flex-flow: row wrap;
     background-color: rgb(138, 138, 138);
     padding: 15px;
+    justify-content: space-between;
 }
 
 h1{
     margin: 0px;
-    flex: 1 0 150px;
     color: white;
 
 }
@@ -35,7 +35,9 @@ h1{
 }
 
 .opçao:hover{
-    
+    background-color: white;
+    color: black;
+    transition: background-color, color 1s;
 }
 
 
@@ -49,13 +51,14 @@ h1{
 
 #pai{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:space-between;
+    flex-flow: row nowrap;
     width: 500px;
 }
 
-    /* Media querie para telemovel*/
+/* Media querie para telemovel*/
 
-    @media screen and (min-width:0px ) and (max-width:560px){
+    @media screen and (max-width:535px){
          
         #pai,header{
             flex-flow: column nowrap;
