@@ -18,6 +18,13 @@ header{
     justify-content: space-between;
 }
 
+#pai{
+    display: flex;
+    justify-content:space-between;
+    flex-flow: row nowrap;
+    width: 500px;
+}
+
 h1{
     margin: 0px;
     color: white;
@@ -49,12 +56,7 @@ h1{
     box-shadow: 5px 5px 16px  rgba(0, 0, 0, 0.295);
 }
 
-#pai{
-    display: flex;
-    justify-content:space-between;
-    flex-flow: row nowrap;
-    width: 500px;
-}
+
 
 /* Media querie para telemovel*/
 
@@ -62,13 +64,11 @@ h1{
          
         #pai,header{
             flex-flow: column nowrap;
-            justify-content: space-evenly;
             width: auto;
             height: 300px;
         }
         
         h1{
-            flex:0 0 auto;
             text-align: center;
         }
     }
